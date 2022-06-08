@@ -52,16 +52,16 @@ const Products = () => {
               onClick={() => handleClick(product, company)}
             >
               {product.title}
-              <ProductsModal
-                isOpen={isOpen}
-                onClose={onClose}
-                selectedProduct={selectedProduct}
-                selectedCompany={selectedCompany}
-              />
             </Button>
           ))}
         </Box>
       ))}
+      <ProductsModal
+        isOpen={isOpen}
+        onClose={onClose}
+        selectedProduct={selectedProduct}
+        selectedCompany={selectedCompany}
+      />
     </>
   );
 };
